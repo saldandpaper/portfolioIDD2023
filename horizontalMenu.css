@@ -1,0 +1,25 @@
+#navbar {
+	margin:10px;
+	width:900px;
+	font-family: century gothic;
+}
+#navbar li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+#navbar a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+}
+
+#navbar a:hover {
+	background-color:#009;
+	color:#fff;
+}
