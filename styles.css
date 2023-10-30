@@ -1,7 +1,7 @@
 #navbar {
 	margin:1%;
 	width:100%;
-	font-family: sans-serif;
+	/* font-family: century gothic; */
 }
 #navbar h1{
     font-size: 30pt;
@@ -29,8 +29,4 @@
 
 #mainContent table, tr, td {
 	border: 1px solid #000;
-}
-
-img {
-	height: 40px;
 }
