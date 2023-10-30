@@ -26,3 +26,7 @@
 	background-color:rgb(147, 85, 185);
 	color:#fff;
 }
+
+#mainContent table, tr, td {
+	border: 1px solid #000;
+}
