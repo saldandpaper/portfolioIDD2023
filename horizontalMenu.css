@@ -1,25 +1,28 @@
 #navbar {
-	margin:10px;
-	width:900px;
-	font-family: century gothic;
+	margin:1%;
+	width:100%;
+	/* font-family: century gothic; */
+}
+#navbar h1{
+    font-size: 30pt;
 }
 #navbar li {
-	display:block;
+	display:inline;
 	width:120px;
 	float:left;
-	margin-left:2px;
+	margin-left:2%;
 	border:1px solid #000;
 }
 
 #navbar a {
 	display:block;
-	padding:3px;
+	padding:3%;
 	text-decoration:none;
 	background-color:#fff;
-	color:#009;
+	color:rgb(147, 85, 185);
 }
 
 #navbar a:hover {
-	background-color:#009;
+	background-color:rgb(147, 85, 185);
 	color:#fff;
 }
