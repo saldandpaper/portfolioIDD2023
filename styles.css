@@ -6,7 +6,7 @@
 #navbar h1{
     font-size: 30pt;
 }
-#navbar li {
+#buttons li {
 	display:inline;
 	width:120px;
 	float:left;
@@ -14,7 +14,7 @@
 	border:1px solid #000;
 }
 
-#navbar a {
+#buttons a {
 	display:block;
 	padding:3%;
 	text-decoration:none;
@@ -22,7 +22,7 @@
 	color:rgb(147, 85, 185);
 }
 
-#navbar a:hover {
+#buttons a:hover {
 	background-color:rgb(147, 85, 185);
 	color:#fff;
 }
