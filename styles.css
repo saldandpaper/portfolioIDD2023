@@ -1,9 +1,9 @@
-#navbar {
+#navbar, #buttons {
 	margin:1%;
 	width:100%;
 	/* font-family: century gothic; */
 }
-#navbar h1{
+#buttons h1{
     font-size: 30pt;
 }
 #buttons li {
