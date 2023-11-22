@@ -1,33 +1,56 @@
-#navbar, #buttons {
-	margin:1%;
-	width:100%;
-	/* font-family: century gothic; */
-}
-#buttons h1{
-    font-size: 30pt;
-}
-#buttons li {
-	display:inline;
-	width:120px;
-	float:left;
-	margin-left:2%;
-	border:1px solid #000;
+/* comment 1 */
+/* comment 2 */
+
+
+body {
+	background-color: #1C1924;
+	color: #AFC1D6;
+	font-family: century gothic;
 }
 
-#buttons a {
-	display:block;
-	padding:3%;
-	text-decoration:none;
-	background-color:#fff;
-	color:rgb(147, 85, 185);
+.topBar {
+	background-color: red;
+	height: 50pt;
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
 }
 
-#buttons a:hover {
-	background-color:rgb(147, 85, 185);
-	color:#fff;
+.topBarElem {
+	text-decoration: none;
+	border: cyan 2px solid;
+	padding: 5% 10%;
 }
 
-#mainContent table, tr, td {
-	border: 1px solid rgb(0, 0, 0);
-	border-radius: 2px;
+.topbarElem:link{
+	text-decoration: none;
 }
+
+.topBarLogo {
+	border: black 2px solid;
+	padding: 5px;
+}
+
+.topBar ul {
+	list-style: none;
+	display: flex;
+	flex: auto;
+}
+
+#headLogo {
+	height: 30pt;
+}
+
+#mainContent table, th, tr, td {
+	border: 1px solid rgb(255, 255, 255);
+	padding: 10pt;
+}
+
+#mainContent td, th {
+	border-radius: 10px;
+}
+
+#mainContent table {
+	border-radius: 20px;
+}
+
