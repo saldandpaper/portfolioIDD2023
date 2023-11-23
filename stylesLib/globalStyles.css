@@ -96,17 +96,19 @@ body ul{
 
 .links {
 	border: white solid 1px;
-	border-right: grey solid 1px;
+	border-right: grey hidden 1px;
 	border-bottom: grey solid 1px;
+	border-radius: 10pt;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
 	display: block;
 	position: fixed;
 	padding: 0px;
 	position: fixed;
 	margin: auto;
-	right: 1%;
+	right: 0;
 	top: 20vh;
 	width: fit-content;
-	border-radius: 10pt;
 	background-color: rgba(49, 59, 68, 0.7);
 	/* background-color: rgba(255, 255, 255, 0.7); */
 	backdrop-filter: blur(20);
