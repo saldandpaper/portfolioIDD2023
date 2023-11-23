@@ -4,30 +4,39 @@
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./stylesLib/styles.css" rel="stylesheet">
+    <link href="./stylesLib/globalStyles.css" rel="stylesheet">
+    <link href="./stylesLib/indexStyles.css" rel="stylesheet">
     <!-- <link rel="icon" type="image/x-icon" href="/logo_black_solid.png"> -->
     <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico"/>
 </head>
 <body>
     <!-- i'm making the comment line on this document -->
     <div class="topBar">
-        <ul class="topBarGroup">
-            <li class="topBarElem"><a href="./aural.html">aural</a></li>
-            <li class="topBarLogo"><a href="./index.html"><img id="headLogo" src="./imgLib/logo_white_solid.png"></a></li>
-            <li class="topBarElem"><a href="./visual.html">visual</a></li>
-        </ul>
+            <ul>
+                <li class="topBarSpace"></li>
+                <li><a href="./aural.html">AUDIO</a></li>
+                <li class="topBarLogo"><a href="./index.html"><img id="headLogo" src="./imgLib/logo_white_solid.png"></a></li>
+                <li><a href="./visual.html">VISUAL</a></li>
+                <li class="topBarSpace"></li>
+            </ul>        
     </div>
-
+    <div class="topSpace"></div>
+    <nav class="links">
+        <ul>
+            <li><a target="_blank" href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg=="><img src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
+            <li><a><img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
+            <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
+        </ul>
+    </nav>
     <nav id="navList">
         <ul>
-            <li><a href="#buttons">buttons</a></li>
-            <li><a href="#biography">biography</a></li>
-            <li><a href="#tables">tables</a></li>
-            <li><a href="#elon">elon</a></li>
+            <li><a href="recents">Recents</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#tables">Tables</a></li>
         </ul>
     </nav>
     <div id="mainContent">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1SsLW9VTYn13tVCfBlZVnW?utm_source=generator&theme=0" width="100%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
         <div>
             <h2 id="biography">
                 Biography
@@ -36,34 +45,11 @@
                 potentially interesting things about this human.
                 This page looks terrible but it should have everything that I need for this lab for the moment being.
             </p>
-        </div>
-        <div>
-            <h3 id="tables">Another heading section with tables</h3>
-            <table>
-                <tr>
-                    <th>Table Heading 1</th>
-                    <th>Table Heading 2</th>
-                    <th>Table Heading 3</th>
-                </tr>
-                <tr>
-                    <td>Data 1</td>
-                    <td>Data 2</td>
-                    <td>Data 3</td>
-                </tr>
-                <tr>
-                    <td>Data 4</td>
-                    <td>Data 5</td>
-                    <td>Data 6</td>
-                </tr>
-            </table>
             <figure>
                 <img src="./imgLib/hmm.gif" alt="hmm, bouncy jelly">
                 <figcaption>(The Jelly Bounces and Thinks)</figcaption>
             </figure>
             <blockquote><p>He thinky, contemplatey, smiley, and bouncey.</p></blockquote>
-            <figure id="elon">
-                <img id="elon" src="./imgLib/15MegazineCover.png" alt="elon musk as a Times megazine cover subject" height="500">
-            </figure>
         </div>
     </div>
 
@@ -72,6 +58,7 @@
     </div>
 
         <footer>
+            <h1>FOOTER</h1>
             <p>website made by @saldandpaper</p>
             <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p>
             <p>saldandpaper 2023 (c)</p>
