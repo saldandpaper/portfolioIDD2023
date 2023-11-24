@@ -1,3 +1,6 @@
+/* style sheet for homepage */
+
+/* animations, imports, and keyframes */
 @keyframes buttonAnimation {
 	from {text-shadow: none;
 		translate: 0em, 0em;}
@@ -5,6 +8,7 @@
 		translate: 0em -1pt;}
 }
 
+/* style for navigation list, per page, floating */
 
 #navList {
     border-top: white solid 1px;
@@ -12,6 +16,8 @@
 	border-left: grey solid 1px;
     border-radius: 10pt;
 }
+
+/* style for main content */
 
 #mainContent {
     margin: 0pt 15pt;
@@ -23,26 +29,34 @@
 
 #recents ul {
     display: flex;
+    flex-wrap: wrap;
 }
-
-
 
 #recents img {
     height: 100pt;
 }
 
 #mainContent table {
-    border: lightslategray 1px solid;
-    border-radius: 10pt;
+    border-top: #FFFFFF2a 1px solid;
+    border-left: #FFFFFF2a 1px solid;
+    border-right: #0000002a 1px solid;
+    border-bottom: #0000002a 1px solid;
+    border-radius: 15pt;
     border-spacing: 5pt;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 1); 
+    box-shadow:  2px 2px 10px #000000aa,
+             -2px -2px 10px #ffffff2a;
 }
 #mainContent tr, td, th {
     padding: 20pt;
 }
+
+#mainContent th {
+    text-shadow:  2px 2px 10px #000000,
+    -2px -2px 10px #ffffff2a;
+}
 #mainContent td{
-    border: lightslategray 1px solid;
-    border-radius: 5pt;
-    box-shadow:  2px 2px 10px #1e2123,
+    /* border: lightslategray 1px solid; */
+    border-radius: 10pt;
+    box-shadow:  2px 2px 10px #000000aa,
              -2px -2px 10px #ffffff2a;
 }

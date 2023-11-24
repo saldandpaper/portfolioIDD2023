@@ -1,12 +1,7 @@
-/* this is a comment please be happy about it thanks */
-/* @keyframes buttonAnimation {
-	from {opacity: 100%;}
-	to {opacity: 70%;
-		translate: 0em -1pt;}
-} */
+/* global style sheet, used by multiple pages */
 
 @keyframes buttonAnimation {
-	from {text-shadow: none;
+	from {text-shadow: inherit;
 		translate: 0em, 0em;}
 	to {text-shadow: rgb(89, 200, 255) 1px 0 10px;
 		translate: 0em -1pt;}
@@ -25,16 +20,21 @@ body ul{
 	list-style: none;
 }
 
+/* head space */
+
 .topSpace { 
 	/* height: 50pt;  */
-	height: 7vh;
+	height: 46pt;
 } 
+
+/* floating top bar */
+
 .topBar {
 	border: rgba(255, 255, 255) 1px solid;
 	border-right: lightslategrey 1px solid;
 	border-bottom: lightslategray 1px solid;
 	display: block;
-	height: 6vh;
+	height: fit-content;
 	width: 95%;
 	min-width: 16rem;
 	font-size: 15pt;
@@ -43,11 +43,9 @@ body ul{
 	left: 0px;
 	right: 0px;
 	/* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);  */
-
+/* neumorphic fx */
 	box-shadow: inset 20px 20px 60px rgba(82, 104, 136, 0.204),
             inset -20px -20px 60px #74828f56;
-
-
 	border-radius: 10pt;
 	background-color: rgba(28, 31, 43, 0.5);
 	backdrop-filter: blur(20px);
@@ -79,20 +77,22 @@ body ul{
 	text-decoration: none;
 	padding: none;
 	margin: none;
-	font-size: clamp(12pt, 3vw, 14pt);
+	font-size:13pt;
 }
 .topBarLogo {
 	/* border: red 1px solid; */
-	padding-top: 2px;
+	padding-top: 4px;
 	flex: 1;
 }
 #headLogo {
 	/* height: 25pt; */
-	height: 4vh;
+	height: 20pt;
 	padding: none;
 	margin: none;
 	margin-top: 1%;
 }
+
+/* links and socials styles defaults and for desktop */
 
 .links img {
 	height: 20pt;
@@ -120,7 +120,7 @@ body ul{
 .links ul {
 	display: flex;
 	flex-direction: column;
-	padding: 0px;
+	padding: 0px; 
 	margin: 0px;
 
 }
@@ -134,4 +134,8 @@ body ul{
 	animation-name: buttonAnimation;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait) {
+
 }
