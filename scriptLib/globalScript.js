@@ -1,8 +1,3 @@
-const buttonAlert = () => {
-    alert("Welcome to my portfolio. ")
-}
 
-
-
-
+//footer with dynamic year display
 document.getElementById("footerYear").innerHTML = new Date().getFullYear();
