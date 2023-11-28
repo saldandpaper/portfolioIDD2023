@@ -4,29 +4,24 @@
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="./stylesLib/globalStyles.css" rel="stylesheet">
     <link href="./stylesLib/indexStyles.css" rel="stylesheet">
-    <script src="./scriptLib/globalScript.js"></script>
+    <script defer src="./scriptLib/globalScript.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico"/>
 </head>
 <body>
-    <!-- global elements: floating(topBar, links/socials) -->
-    <label>
-            <div class="topBar">
-                <ul>
-                    <li class="topBarSpace"></li>
-                    <li><a href="./markupLib/aural.html">AUDIO</a></li>
-                    <li class="topBarLogo"><a href="./index.html"><img id="headLogo" src="./imgLib/logo_white_solid.png"></a></li>
-                    <li><a href="./markupLib/visual.html">VISUAL</a></li>
-                    <li class="topBarSpace"></li>
-                </ul>
-            </div>
-        <!-- <input type="checkBox" id="mainBorgir" class="borgirShow" for > -->
-        <nav class="links">
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg=="><img src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
-                <li><a><img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
-                <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
+    <!-- i'm making the comment line on this document -->
+    <div id="navbar">
+        <nav>
+            <h1>Portfolio IDD 2023</h1>
+            <ul id="navbarList">
+                <table>
+                    <td><a href="#buttons">buttons</a></td>
+                    <td><a href="#biography">biography</a></td>
+                    <td><a href="#tables">tables</a></td>
+                    <td><a href="#elon">elon</a></td>
+                </table>
             </ul>
         </nav>
     </label>
@@ -37,7 +32,8 @@
         <ul>
             <li><a href="recents">Recents</a></li>
             <li><a href="#biography">Biography</a></li>
-            <li><a href="#tables">Tables</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><button id="btn-alert" onclick="buttonAlert()">Alert Button</button></li>
         </ul>
     </nav>
     <div id="mainContent">
@@ -115,11 +111,12 @@
         <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/sSuKUFWf2Dk" title="Bouncing Ball on Jelly. Or water." 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen></iframe> -->
-
+        <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p>
+>>>>>>> Stashed changes
         <footer>
             <p>website made by @saldandpaper</p>
-            <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p>
-            <p>saldandpaper 2023 (c)</p>
+
+            <p>saldandpaper <span id="footerYear"></span> (c)</p>
         </footer>
 </body>
 </html>
