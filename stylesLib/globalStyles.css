@@ -43,10 +43,9 @@ body ul{
 	margin: auto;
 	left: 0px;
 	right: 0px;
-	/* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);  */
 /* neumorphic fx */
-	box-shadow: inset 5px 5px 50px rgba(82, 104, 136, 0.204),
-				inset -5px -5px 50px #74828f56;
+	box-shadow:  0px 8px 22px #00000060,
+		   inset 0px -8px 22px #2b37459f;
 	border-radius: 10pt;
 	background-color: rgba(28, 31, 43, 0.5);
 	backdrop-filter: blur(20px);
@@ -117,8 +116,8 @@ body ul{
 	width: fit-content;
 	background-color: rgba(49, 59, 68, 0.7);
 	/* background-color: rgba(255, 255, 255, 0.7); */
-	box-shadow: inset 5px 5px 50px rgba(82, 104, 136, 0.204),
-				inset -5px -5px 50px #74828f56;
+	box-shadow:  0px 8px 22px #00000060,
+		   inset 0px -8px 22px #2b37459f;
 	backdrop-filter: blur(20);
 }
 .links ul {
