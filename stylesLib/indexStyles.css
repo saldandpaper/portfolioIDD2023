@@ -1,73 +1,5 @@
 /* style sheet for homepage */
 
-/* animations, imports, and keyframes */
-@keyframes buttonAnimation {
-	from {text-shadow: none;
-		translate: 0em, 0em;}
-	to {text-shadow: rgb(89, 200, 255) 1px 0 10px;
-		translate: 0em -1pt;}
-}
-
-/* style for navigation list, per page, floating */
-
-#navList {
-    border-top: #FFFFFF7a solid 1px;
-	border-left: #FFFFFF3a solid 1px;
-	border-right: #FFFFFF3a hidden 1px;
-	border-bottom: #FFFFFF3a solid 1px;
-    border-radius: 10pt;
-    border-top-left-radius: 0pt;
-    border-bottom-left-radius: 0pt;
-    width: fit-content;
-    position: fixed;
-    height: fit-content;
-    left: 0;
-    top: 60pt;
-    margin: auto;
-    padding: 0px;
-	background-color: rgba(28, 31, 43, 0.5); 
-    box-shadow:  0px 8px 22px #00000060,
-		   inset 0px -8px 22px #2b37459f;
-    text-shadow: 5px 5px 10px #000000A0;
-    backdrop-filter: blur(20pt);
-}
-
-#navList ul {
-    /* border: purple 1px solid; */
-    margin: auto;
-    padding: 0pt;
-    display: flex;
-    flex-direction: column;
-}
-
-#navList li {
-    /* border: lime 1px solid; */
-    margin: 0pt;
-    padding-top: 5pt;
-    padding-bottom: 5pt;
-    padding-left: 5pt;
-    padding-right: 5pt;
-    justify-content: cernter;
-}
-#navList a {
-    /* border: red 1px solid; */
-    /* margin: 0pt; */
-    text-decoration: none;
-}
-#navList a:hover, button {
-	animation-name: buttonAnimation;
-	animation-duration: 300ms;
-	animation-fill-mode: forwards;
-}
-#btn-alert {
-    background-color: #00000000;
-    color: inherit;
-    border-radius: 7pt;
-    font-family: inherit;
-    font-size: inherit;
-    /* border: red 1px solid; */
-    /* padding: 0pt; */
-}
 
 /* style for main content */
 
@@ -116,14 +48,3 @@
                 -2px -2px 10px #ffffff2a;
 }
 
-footer {
-    font-size: 10pt;
-    font-style: italic;
-    margin: 0pt;
-    padding: 0pt;
-}
-footer p {
-    text-align: center;
-    margin: 0pt;
-    padding: 0pt;
-}
