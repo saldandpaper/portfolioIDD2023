@@ -30,9 +30,10 @@ body ul{
 /* floating top bar */
 
 .topBar {
-	border: rgba(255, 255, 255) 1px solid;
-	border-right: lightslategrey 1px solid;
-	border-bottom: lightslategray 1px solid;
+	border-top: #FFFFFF7a solid 1px;
+	border-left: #FFFFFF3a solid 1px;
+	border-right: #FFFFFF3a hidden 1px;
+	border-bottom: #FFFFFF3a solid 1px;
 	display: block;
 	height: fit-content;
 	width: 95%;
@@ -44,8 +45,8 @@ body ul{
 	right: 0px;
 	/* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);  */
 /* neumorphic fx */
-	box-shadow: inset 20px 20px 60px rgba(82, 104, 136, 0.204),
-            inset -20px -20px 60px #74828f56;
+	box-shadow: inset 5px 5px 50px rgba(82, 104, 136, 0.204),
+				inset -5px -5px 50px #74828f56;
 	border-radius: 10pt;
 	background-color: rgba(28, 31, 43, 0.5);
 	backdrop-filter: blur(20px);
@@ -99,9 +100,10 @@ body ul{
 }
 
 .links {
-	border: white solid 1px;
-	border-right: grey hidden 1px;
-	border-bottom: grey solid 1px;
+	border-top: #FFFFFF7a solid 1px;
+	border-left: #FFFFFF3a solid 1px;
+	border-right: #FFFFFF3a hidden 1px;
+	border-bottom: #FFFFFF3a solid 1px;
 	border-radius: 10pt;
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
@@ -115,6 +117,8 @@ body ul{
 	width: fit-content;
 	background-color: rgba(49, 59, 68, 0.7);
 	/* background-color: rgba(255, 255, 255, 0.7); */
+	box-shadow: inset 5px 5px 50px rgba(82, 104, 136, 0.204),
+				inset -5px -5px 50px #74828f56;
 	backdrop-filter: blur(20);
 }
 .links ul {
