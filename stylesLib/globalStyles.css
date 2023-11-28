@@ -1,0 +1,142 @@
+/* global style sheet, used by multiple pages */
+
+@keyframes buttonAnimation {
+	from {text-shadow: inherit;
+		translate: 0em, 0em;}
+	to {text-shadow: rgb(89, 200, 255) 1px 0 10px;
+		translate: 0em -1pt;}
+}
+
+body {
+	background-color: #1e242e;
+	color: #AFC1D6;
+	font-family: century gothic;
+}
+
+body a {
+	color: #AFC1D6;
+}
+body ul{
+	list-style: none;
+}
+
+/* head space */
+
+.topSpace { 
+	/* height: 50pt;  */
+	height: 46pt;
+} 
+
+/* floating top bar */
+
+.topBar {
+	border: rgba(255, 255, 255) 1px solid;
+	border-right: lightslategrey 1px solid;
+	border-bottom: lightslategray 1px solid;
+	display: block;
+	height: fit-content;
+	width: 95%;
+	min-width: 16rem;
+	font-size: 15pt;
+	position: fixed;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	/* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);  */
+/* neumorphic fx */
+	box-shadow: inset 20px 20px 60px rgba(82, 104, 136, 0.204),
+            inset -20px -20px 60px #74828f56;
+	border-radius: 10pt;
+	background-color: rgba(28, 31, 43, 0.5);
+	backdrop-filter: blur(20px);
+	text-shadow: 5px 5px 10px #000000F0;
+}
+
+.topBar ul {
+	/* border: yellowgreen 2px solid; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 5pt;
+}
+
+.topBar li {
+	/* border: cyan 1px solid; */
+	flex:auto;
+	text-align: center;
+}
+.topBar a:hover{
+	animation-name: buttonAnimation;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+.topBar a {
+	/* border: cyan 1px solid; */
+	text-decoration: none;
+	padding: none;
+	margin: none;
+	font-size:13pt;
+}
+.topBarLogo {
+	/* border: red 1px solid; */
+	padding-top: 4px;
+	flex: 1;
+}
+#headLogo {
+	/* height: 25pt; */
+	height: 20pt;
+	padding: none;
+	margin: none;
+	margin-top: 1%;
+}
+
+/* links and socials styles defaults and for desktop */
+
+.links img {
+	height: 20pt;
+}
+
+.links {
+	border: white solid 1px;
+	border-right: grey hidden 1px;
+	border-bottom: grey solid 1px;
+	border-radius: 10pt;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	display: block;
+	position: fixed;
+	padding: 0px;
+	position: fixed;
+	margin: auto;
+	right: 0;
+	top: 20vh;
+	width: fit-content;
+	background-color: rgba(49, 59, 68, 0.7);
+	/* background-color: rgba(255, 255, 255, 0.7); */
+	backdrop-filter: blur(20);
+}
+.links ul {
+	/* border: red 1pt solid; */
+	display: flex;
+	flex-direction: column;
+	padding: 0px; 
+	margin: 0px;
+
+}
+.links li {
+	/* border: rgb(255, 0, 0) 1px solid; */
+	border-radius: 10pt;
+	margin: 0px;
+	padding: 5pt;
+}
+.links li:hover {
+	animation-name: buttonAnimation;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+
+/* @media screen and (max-width: 850px) and (orientation: portrait) {
+
+} */
