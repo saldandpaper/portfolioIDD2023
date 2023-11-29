@@ -8,11 +8,15 @@
 		translate: 0em -1pt;}
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
 /* body styles */
 body {
 	background-color: #1e242e;
 	color: #AFC1D6;
-	font-family: century gothic;
+	/* font-family: century gothic; */
+	font-family: 'Questrial', sans-serif;
 }
 
 body a {
@@ -50,6 +54,7 @@ body ul{
 		   inset 0px -8px 22px #2b37459f;
 	border-radius: 10pt;
 	background-color: rgba(28, 31, 43, 0.5);
+	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 	text-shadow: 5px 5px 10px #000000F0;
 	z-index: 10;
@@ -111,7 +116,6 @@ body ul{
 	display: block;
 	position: fixed;
 	padding: 0px;
-	position: fixed;
 	margin: auto;
 	right: 0;
 	top: 20vh;
@@ -120,6 +124,7 @@ body ul{
 	/* background-color: rgba(255, 255, 255, 0.7); */
 	box-shadow:  0px 8px 22px #00000060,
 		   inset 0px -8px 22px #2b37459f;
+	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20);
 }
 .links ul {
@@ -166,6 +171,7 @@ body ul{
     box-shadow:  0px 8px 22px #00000060,
 		   inset 0px -8px 22px #2b37459f;
     text-shadow: 5px 5px 10px #000000A0;
+	-webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20pt);
 }
 
