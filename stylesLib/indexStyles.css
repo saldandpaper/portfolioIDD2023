@@ -10,7 +10,7 @@
 #recents {
     height: fit-content;
 }
-
+    
 #recents ul {
     display: flex;
     flex-wrap: wrap;
