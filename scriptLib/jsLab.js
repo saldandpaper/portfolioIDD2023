@@ -1,6 +1,6 @@
 //alert button
 const buttonAlert = () => {
-    alert("Welcome to my portfolio. ")
+    alert("Welcome to my portfolio. ");
 }
 
 //Hover Button method 1 (refactored)
@@ -37,7 +37,7 @@ document.getElementById("btn-counter").onclick = () => {
     //sanity check
     console.log("logged: " + count);
     //even/odd
-    if ((count%2) == 0){
+    if ((count%2) == 0) {
         // text.classList.remove("even");
         // text.classList.add("even");
         text.style.color = "pink";
@@ -48,22 +48,23 @@ document.getElementById("btn-counter").onclick = () => {
         // text.classList.remove("even");
         // text.classList.add("odd");
     }
-    // for (i = 0; i < count; i++){
+
+//     for (i = 0; i < count; i++){
+//         const node = document.createElement('li');
+//         const textNode = document.createTextNode(count);
+//         node.appendChild(textNode);
+//         document.getElementById("numbers").appendChild(node);
+//         console.log("sanity check: " + count);
+// }
+
         const node = document.createElement('li');
         const textNode = document.createTextNode(count);
         node.appendChild(textNode);
         document.getElementById("numbers").appendChild(node);
         console.log("sanity check: " + count);
-    // }
 }
 
-// for (i = 0; i < count; i++){
-//     const node = document.createElement('li');
-//     const textNode = document.createTextNode("walter");
-//     node.appendChild(textNode);
-//     document.getElementById("numbers").appendChild(node);
-//     console.log("sanity check: " + i);
-// }
+
 
 
 
