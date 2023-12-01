@@ -4,7 +4,7 @@
 /* style for main content */
 
 #mainContent {
-    margin: 0pt 8vw;
+    margin: 0pt 8dvw;
 }
 
 #recents {
@@ -19,7 +19,7 @@
 }
 
 #recents img {
-    width: 80vh;
+    height: 30dvw;
 }
 
 #mainContent table {
@@ -32,11 +32,14 @@
     box-shadow:  2px 2px 5px #000000aa,
                 -2px -2px 5px #ffffff2a;
     text-align: center;
+    width: fit-content;
+    left: 50%;
+    right: 50%;
     margin: auto;
 
 }
 #mainContent tr, td, th {
-    padding: 20pt;
+    padding: 5dvw;
 }
 
 #mainContent th {
