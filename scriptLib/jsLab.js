@@ -41,7 +41,6 @@ document.getElementById("btn-counter").onclick = () => {
         text.classList.remove("odd");
         text.classList.add("even");
         // text.style.color = "pink";
-        // console.log(i);
     }
     else {
         // text.style.color = "cyan";
@@ -49,28 +48,20 @@ document.getElementById("btn-counter").onclick = () => {
         text.classList.add("odd");
     }
 
-    // document.getElementById()
-//     for (i = 0; i < count; i++){
-        const node = document.createElement('li');
-        node.appendChild(textNode);
-        document.getElementById("numbers").appendChild(node);
-        // console.log("sanity check: " + count);
-// }
 }
 
-
-
-
-// // for loop
-// for (let i = 0; i < 100; i++){
-//     const node = document.createElement('li');
-//     const textNode = document.createTextNode("uh");
-//     node.appendChild(textNode);
-//     document.getElementById("test").appendChild(node);
-// }
-
+//for loop
 for (let i = 0; i < 100; i++){
     const node = document.createElement('li');
-    node.textContent = "";
+    let EoO;
+    if ((i+1)%2 == 0){
+        EoO = "even";
+        node.classList.add("even");
+    }
+    else {
+        EoO = "odd";
+        node.classList.add("odd");
+    }
+    node.textContent = EoO;
     document.getElementById("numbers").appendChild(node);
 }

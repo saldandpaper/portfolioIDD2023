@@ -44,7 +44,7 @@
 
 #numbers {
     /* border: blue 1px solid; */
-    color: lime;
+    /* color: lime; */
     /* list-style: decimal; */
     list-style-position: inside;
     display: flex;
@@ -66,8 +66,10 @@
 
 .even {
     color: pink;
+    text-shadow: pink 0pt 0pt 20pt;
     /* font-size: x-large; */
 }
 .odd {
     color: cyan;
+    text-shadow: cyan 0pt 0pt 20pt;
 }

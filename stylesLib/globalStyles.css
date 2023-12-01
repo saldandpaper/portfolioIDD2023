@@ -210,7 +210,7 @@ body ul{
 }
 
 footer {
-	border: red 1px solid;
+	/* border: red 1px solid; */
     font-size: 10pt;
     font-style: italic;
     margin-top: 50pt;
