@@ -175,6 +175,8 @@ body ul{
     text-shadow: 5px 5px 10px #000000A0;
 	-webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20pt);
+	z-index: 10;
+	
 }
 
 #navList ul {
@@ -206,7 +208,7 @@ body ul{
 }
 
 #mainContent {
-    margin: 0pt 8vw;
+    margin: 0pt 8dvw;
 }
 
 h1, h2 {
