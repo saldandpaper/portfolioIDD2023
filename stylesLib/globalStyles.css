@@ -32,6 +32,7 @@ body ul{
 .topSpace { 
 	/* height: 50pt;  */
 	height: 46pt;
+	/* scroll-margin: pt; */
 } 
 
 /* floating top bar */
@@ -209,11 +210,12 @@ body ul{
 }
 
 footer {
-	/* border: red 1px solid; */
+	border: red 1px solid;
     font-size: 10pt;
     font-style: italic;
     margin-top: 50pt;
     padding-top: 20pt;
+	/* margin: 0px; */
 	padding-bottom: 20pt;
 	background-color: #000000;
 	width: 100%;

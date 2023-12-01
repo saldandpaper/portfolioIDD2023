@@ -38,34 +38,39 @@ document.getElementById("btn-counter").onclick = () => {
     console.log("logged: " + count);
     //even/odd
     if ((count%2) == 0) {
-        // text.classList.remove("even");
-        // text.classList.add("even");
-        text.style.color = "pink";
+        text.classList.remove("odd");
+        text.classList.add("even");
+        // text.style.color = "pink";
         // console.log(i);
     }
     else {
-        text.style.color = "cyan";
-        // text.classList.remove("even");
-        // text.classList.add("odd");
+        // text.style.color = "cyan";
+        text.classList.remove("even");
+        text.classList.add("odd");
     }
 
+    // document.getElementById()
 //     for (i = 0; i < count; i++){
-//         const node = document.createElement('li');
-//         const textNode = document.createTextNode(count);
-//         node.appendChild(textNode);
-//         document.getElementById("numbers").appendChild(node);
-//         console.log("sanity check: " + count);
-// }
-
         const node = document.createElement('li');
-        const textNode = document.createTextNode(count);
         node.appendChild(textNode);
         document.getElementById("numbers").appendChild(node);
-        console.log("sanity check: " + count);
+        // console.log("sanity check: " + count);
+// }
 }
 
 
 
 
+// // for loop
+// for (let i = 0; i < 100; i++){
+//     const node = document.createElement('li');
+//     const textNode = document.createTextNode("uh");
+//     node.appendChild(textNode);
+//     document.getElementById("test").appendChild(node);
+// }
 
-// for loop
+for (let i = 0; i < 100; i++){
+    const node = document.createElement('li');
+    node.textContent = "";
+    document.getElementById("numbers").appendChild(node);
+}
