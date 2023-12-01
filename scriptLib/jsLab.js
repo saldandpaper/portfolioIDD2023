@@ -47,7 +47,6 @@ document.getElementById("btn-counter").onclick = () => {
         text.classList.remove("even");
         text.classList.add("odd");
     }
-
 }
 
 //for loop

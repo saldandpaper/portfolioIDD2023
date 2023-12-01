@@ -64,6 +64,13 @@
     margin-bottom: 10pt;
 }
 
+#numbers :nth-child(even){
+    background-color: #0000007F;
+}
+#numbers :nth-child(odd){
+    background-color: #FFFFFF0F;;
+}
+
 .even {
     color: pink;
     text-shadow: pink 0pt 0pt 20pt;

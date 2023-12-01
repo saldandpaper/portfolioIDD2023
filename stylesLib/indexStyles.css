@@ -13,7 +13,9 @@
     
 #recents ul {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    width: 85%;
+    overflow-x: scroll;
 }
 
 #recents img {

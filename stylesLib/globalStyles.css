@@ -209,6 +209,12 @@ body ul{
     margin: 0pt 8vw;
 }
 
+h1, h2 {
+	text-align: center;
+}
+
+
+
 footer {
 	/* border: red 1px solid; */
     font-size: 10pt;
