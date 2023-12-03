@@ -3,7 +3,7 @@
 
 /* style for main content */
 
-#mainContent {
+main {
     margin: 0pt 8dvw;
 }
 
@@ -22,7 +22,7 @@
     height: 30dvw;
 }
 
-#mainContent table {
+main table {
     border-top: #FFFFFF2a 1px solid;
     border-left: #FFFFFF2a 1px solid;
     border-right: #0000002a 1px solid;
@@ -38,15 +38,15 @@
     margin: auto;
 
 }
-#mainContent tr, td, th {
+main tr, td, th {
     padding: 5dvw;
 }
 
-#mainContent th {
+main th {
     text-shadow:  2px 2px 10px #000000,
     -2px -2px 10px #ffffff2a;
 }
-#mainContent td{
+main td{
     /* border: lightslategray 1px solid; */
     border-radius: 10pt;
     box-shadow:  0px 8px 22px #00000060,
