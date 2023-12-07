@@ -3,35 +3,31 @@
     backdrop-filter: blur(20pt);
 } */
 
-#mainContent {
-    display: block;
-}
-
 #mainContainer {
     /* border: red 1px solid; */
     text-align: center;
     display: block;
     padding: 0px;
     margin: 0px;
-}
-#mainContainer li {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    list-style: none;
-    padding: 10px;
-    border-top: #FFFFFF5a solid 1px;
-	border-left: #FFFFFF1a solid 1px;
-	border-right: #FFFFFF3a solid 1px;
-	border-bottom: #FFFFFF3a solid 1px;
-    border-radius: 15pt;
-    background: linear-gradient(180deg, #4d4f7a1a, #787cbf1a);
-    box-shadow:  0px 5px 15px #4d4f7a1a,
-                0px -5px 15px #787cbf1a;
-}
-#mainContainer .space {
-    padding: 50pt;
-    margin: 0px;
-}
+    & li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        list-style: none;
+        padding: 10px;
+        border-top: #FFFFFF5a solid 1px;
+        border-left: #FFFFFF1a solid 1px;
+        border-right: #FFFFFF3a solid 1px;
+        border-bottom: #FFFFFF3a solid 1px;
+        border-radius: 15pt;
+        background: linear-gradient(180deg, #4d4f7a1a, #787cbf1a);
+        box-shadow:  0px 5px 15px #4d4f7a1a,
+                    0px -5px 15px #787cbf1a;
+    }
+    & .space {
+        padding: 20pt;
+        margin: 0px;
+    }
+} 
 
 #btn-alert, #btn-counter{
     /* border: red 1px solid; */
@@ -55,25 +51,24 @@
     display: flex;
     flex-direction: column;
     padding: 0px;
-}
-
-#numbers li {
-    /* border: red 1px solid; */
-    list-style: decimal;
-    list-style-position: inside;
-    width: 70pt;
-    left: 50%;
-    right: 50%;
-    margin: auto;
-    margin-top: 10pt;
-    margin-bottom: 10pt;
+    & li {
+        /* border: red 1px solid; */
+        list-style: decimal;
+        list-style-position: inside;
+        width: 70pt;
+        left: 50%;
+        right: 50%;
+        margin: auto;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
 }
 
 #numbers :nth-child(even){
     background-color: #0000007F;
 }
 #numbers :nth-child(odd){
-    background-color: #FFFFFF0F;;
+    background-color: #FFFFFF0F;
 }
 
 .even {
