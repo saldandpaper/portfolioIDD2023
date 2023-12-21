@@ -1,6 +1,6 @@
 //alert button
 const buttonAlert = () => {
-    alert("Welcome to my portfolio. ")
+    alert("Welcome to my portfolio. ");
 }
 
 //Hover Button method 1 (refactored)
@@ -37,34 +37,30 @@ document.getElementById("btn-counter").onclick = () => {
     //sanity check
     console.log("logged: " + count);
     //even/odd
-    if ((count%2) == 0){
-        // text.classList.remove("even");
-        // text.classList.add("even");
-        text.style.color = "pink";
-        // console.log(i);
+    if ((count%2) == 0) {
+        text.classList.remove("odd");
+        text.classList.add("even");
+        // text.style.color = "pink";
     }
     else {
-        text.style.color = "cyan";
-        // text.classList.remove("even");
-        // text.classList.add("odd");
+        // text.style.color = "cyan";
+        text.classList.remove("even");
+        text.classList.add("odd");
     }
-    // for (i = 0; i < count; i++){
-        const node = document.createElement('li');
-        const textNode = document.createTextNode(count);
-        node.appendChild(textNode);
-        document.getElementById("numbers").appendChild(node);
-        console.log("sanity check: " + count);
-    // }
 }
 
-// for (i = 0; i < count; i++){
-//     const node = document.createElement('li');
-//     const textNode = document.createTextNode("walter");
-//     node.appendChild(textNode);
-//     document.getElementById("numbers").appendChild(node);
-//     console.log("sanity check: " + i);
-// }
-
-
-
-// for loop
+//for loop
+for (let i = 0; i < 100; i++){
+    const node = document.createElement('li');
+    let EoO;
+    if ((i+1)%2 == 0){
+        EoO = "even";
+        node.classList.add("even");
+    }
+    else {
+        EoO = "odd";
+        node.classList.add("odd");
+    }
+    node.textContent = EoO;
+    document.getElementById("numbers").appendChild(node);
+}

@@ -5,39 +5,44 @@
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="./stylesLib/globalStyles.css" rel="stylesheet">
     <link href="./stylesLib/indexStyles.css" rel="stylesheet">
     <script defer src="./scriptLib/globalScript.js"></script>
-    <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico" />
+    <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial" rel="stylesheet">
 </head>
 
 <body>
     <!-- global elements: floating(topBar, links/socials) -->
-    <label>
-        <div class="topBar">
-            <ul>
-                <li class="topBarSpace"></li>
-                <li><a href="./aural.html">AUDIO</a></li>
-                <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
-                            src="./imgLib/logo_white_solid.png"></a></li>
-                <li><a href="./visual.html">VISUAL</a></li>
-                <li class="topBarSpace"></li>
-            </ul>
-        </div>
-        <!-- <input type="checkBox" id="mainBorgir" class="borgirShow" for > -->
-        <nav class="links">
-            <ul>
-                <li><a target="_blank"
-                        href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg=="><img
-                            src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
-                <li><a><img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
-                <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
-            </ul>
-        </nav>
+    <section class="globalNav">
+    <nav class="topBar">
+        <ul>
+            <li class="topBarSpace"></li>
+            <li><a href="./aural.html">AUDIO</a></li>
+            <!-- <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
+                        src="./imgLib/logo_white_solid.png" alt="logo"></a></li> -->
+            <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
+                        src="./imgLib/svg_white.svg" alt="logo"></a></li>
+            <li><a href="./visual.html">VISUAL</a></li>
+            <li class="topBarSpace"></li>
+        </ul>
+    </nav>
+    <!-- <input type="checkBox" id="mainBorgir" class="borgirShow" for > -->
+    <nav class="links">
+        <ul>
+            <li><a target="_blank"
+                    href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg=="><img
+                        src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
+            <li><a><img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
+            <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
+        </ul>
+    </nav>
+    <input id="borgir-toggle" type="checkbox">
+    <label class="menu-button-container" for="borgir-toggle">
+        <div class="menu-button"></div>
     </label>
-    <div class="topSpace" id="top"></div>
-    <!-- <div class="borgirOverlay"></div> -->
     <nav id="navList">
         <ul>
             <li><a href="#top">Recents</a></li>
@@ -46,26 +51,37 @@
             <li><a href="./jsLab.html">JavaScript Lab</a></li>
         </ul>
     </nav>
-    <section id="mainContent">
+
+    </section>
+
+    <div class="topSpace" id="top"></div>
+    <main>
         <section id="recents">
-            <ul>
-                <li>
-                    <figure>
-                        <img src="./imgLib/silviaS14snow.png"
-                            alt="Nissan Silvia S14 drifting through a snowy hairpin corner.">
-                        <figcaption>Nissan Silvia S14</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./imgLib/merc2.jpg" alt="Mercedes-Benz SL 65 AMG Black Series">
-                        <figcaption>Mercedes-Benz SL 65 AMG Black Series</figcaption>
-                    </figure>
-                </li>
+            <h2>- Recents -</h2>
+            <ul id="audio">
+                <!-- <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3mtkQPHITy96TBobW5iIpe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li> -->
+                <!-- <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/16fsq1UKuVZcFlvdcydHJh?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li> -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1qy9lqIulUNXAwCZ10BjJl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </ul>
+            <ul id="visual">
+                <li><figure>
+                    <img src="./imgLib/silviaS14snow.png"
+                        alt="Nissan Silvia S14 drifting through a snowy hairpin corner.">
+                    <figcaption>Nissan Silvia S14</figcaption>
+                </figure></li>
+                <li><figure>
+                    <img src="./imgLib/merc2.jpg" alt="Mercedes-Benz SL 65 AMG Black Series">
+                    <figcaption>Mercedes-Benz SL 65 AMG Black Series</figcaption>
+                </figure></li>
+                <li><figure>
+                    <img src="./imgLib/silviaS14parking.png"
+                    alt="Nissan Silvia S14 dritfing in a parkade.">
+                    <figcaption>Nissan Silvia S14</figcaption>
+                </figure></li>
             </ul>
         </section>
-        <section id="biography">
-            <h2>Biography</h2>
+        <article id="biography">
+            <h2>- Biography -</h2>
             <p>This is the biography section containing hobbies and other
                 potentially interesting things about this human.
                 This page looks terrible but it should have everything that I need for this lab for the moment being.
@@ -111,37 +127,30 @@
                 montes, nascetur ridiculus mus. Pellentesque vehicula, orci et ornare pellentesque, libero risus
                 molestie
                 libero, nec ultrices massa lorem eu tellus.</P>
-            <section />
+        </article>
 
-            <h2 id="table">Example Table</h2>
-            <table>
-                <tr>
-                    <th>heading 1</th>
-                    <th>heading 2</th>
-                    <th>heading 3</th>
-                </tr>
-                <tr>
-                    <td>data 1</td>
-                    <td>data 2</td>
-                    <td>data 3</td>
-                </tr>
-                <tr>
-                    <td>data 4</td>
-                    <td>data 5</td>
-                    <td>data 6</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/sSuKUFWf2Dk" title="Bouncing Ball on Jelly. Or water." 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen></iframe> -->
-        <!-- <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p> -->
-        
-    <footer>
-        <p>portfolio @saldandpaper</p>
-        <p>saldandpaper <span id="footerYear"></span> (c)</p>
-    </footer>
+        <h2 id="table">- Example Table -</h2>
+        <table>
+            <tr>
+                <th>heading 1</th>
+                <th>heading 2</th>
+                <th>heading 3</th>
+            </tr>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 4</td>
+                <td>data 5</td>
+                <td>data 6</td>
+            </tr>
+        </table>
+    </main>
 </body>
-
+        <!-- <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p> -->
+<footer>
+    <p>portfolio @saldandpaper <span id="footerYear"></span> (c)</p>
+</footer>
 </html>
