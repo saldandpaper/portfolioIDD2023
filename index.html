@@ -16,6 +16,7 @@
 
 <body>
     <!-- global elements: floating(topBar, links/socials) -->
+    <section class="globalNav">
     <nav class="topBar">
         <ul>
             <li class="topBarSpace"></li>
@@ -38,8 +39,10 @@
             <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
         </ul>
     </nav>
-    <div class="topSpace" id="top"></div>
-    <!-- <div class="borgirOverlay"></div> -->
+    <input id="borgir-toggle" type="checkbox">
+    <label class="menu-button-container" for="borgir-toggle">
+        <div class="menu-button"></div>
+    </label>
     <nav id="navList">
         <ul>
             <li><a href="#top">Recents</a></li>
@@ -48,6 +51,10 @@
             <li><a href="./jsLab.html">JavaScript Lab</a></li>
         </ul>
     </nav>
+
+    </section>
+
+    <div class="topSpace" id="top"></div>
     <main>
         <section id="recents">
             <h2>- Recents -</h2>

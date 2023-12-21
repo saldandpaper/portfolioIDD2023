@@ -218,7 +218,7 @@ body {
     width: fit-content;
     position: fixed;
     height: fit-content;
-
+	justify-content: space-between;
     left: 0;
     top: 20dvh;
     margin: auto;
@@ -253,6 +253,50 @@ body {
 	}
 }
 
+#navList > li {
+	margin: 0 1rem;
+	overflow: hidden;
+}
+
+.menu-button-container {
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#borgir-toggle {
+	display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: #FFF;
+	position: absolute;
+	height: 4pt;
+	width: 30pt;
+}
+
+.menu-button::before {
+	content: "";
+}
+.menu-button::after {
+	content: "";
+}
+#borgir-toggle:checked + .menu-button-container .menu-button::before {
+	transform: rotate(405deg);
+}
+#borgir-toggle:checked + .menu-button-container .menu-button {
+	background: #FFFFFF00;
+}
+#borgir-toggle:checked + .menu-button-container .menu-button::after {
+	transform: rotate(-405deg);
+}
+#menu
 main {
     margin: 0pt 4dvw;
 }
@@ -278,4 +322,35 @@ footer {
 		margin: 0pt;
 		padding: 0pt;
 	}
+}
+
+@media (max-width: 700px) {
+	.menu-button-container {
+		display: flex;
+	}
+	.navList {
+		position: absolute;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#borgir-toggle ~ #navList li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	#borgir-toggle:checked ~ #navList li {
+		border: red 2px solid;
+		padding: 10pt;
+	}
+	#navList > li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0;
+		color: white;
+		background-color: red;
+	}
+	
 }
